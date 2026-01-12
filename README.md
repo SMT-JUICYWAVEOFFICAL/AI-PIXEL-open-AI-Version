@@ -15,7 +15,6 @@ api_key = os.getenv("YOUR API KEY") #MAKE SURE YOU ADD YOUR API KEY FROM https:/
 print("Key loaded:", bool(api_key))  
 
 client = OpenAI(api_key=api_key)
-
 def ask_chatgpt(prompt):
     try:
         completion = client.chat.completions.create(
